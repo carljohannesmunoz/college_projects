@@ -1,3 +1,6 @@
+/* BSCS - 1A (GROUP 10): Alzaga, Letada, Lumbes, Muñoz
+Programming Exercise 6 */
+
 #include<stdio.h>
 
 int occurenceCounter(int number, int digit) {
