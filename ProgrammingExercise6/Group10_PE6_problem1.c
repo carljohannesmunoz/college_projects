@@ -5,14 +5,14 @@ Programming Exercise 6 */
 
 int isPrime(int number) {
     int factors = 0;
-    if(number > 1) {
-        for(int checker = 1; checker<=number; checker++) {
-            if(checker<=number && number%checker==0) 
-                factors++;
+    if(number==1) return 0;
+    for(int checker = 1; checker<=number; checker++) {
+        if(checker<=number && number%checker==0) 
+            factors++;
         }
-        if(factors==2) return 1;
-        else return 0;
-    }
+    if(factors==2) return 1;
+    else return 0;
+
     return 0;
 }
 
