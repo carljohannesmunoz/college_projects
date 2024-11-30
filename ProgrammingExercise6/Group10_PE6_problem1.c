@@ -29,11 +29,13 @@ int main() {
     int number;
     printf("Enter a positive integer(Ctrl-Z to end): ");
     while(scanf("%d", &number) != EOF) {
-        (isPrime(number)==0) ? printf(" prime: NO\n") : printf(" prime: YES\n");
-        (isPerfect(number)==0) ? printf(" perfect: NO\n\n") : printf(" perfect: YES\n\n");
-        printf("Enter a positive integer(Ctrl-Z to end): ");
+        if(number>0) {
+            (isPrime(number)==0) ? printf(" prime: NO\n") : printf(" prime: YES\n");
+            (isPerfect(number)==0) ? printf(" perfect: NO\n") : printf(" perfect: YES\n");
+        }
+        printf("\nEnter a positive integer(Ctrl-Z to end): ");
     }
-    printf("\n End of program. Thanks!\n");
+    printf("\nEnd of program. Thanks!\n");
 
     return 0;
 }
