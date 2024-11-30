@@ -5,13 +5,10 @@ Programming Exercise 6 */
 
 int occurenceCounter(int number, int digit) {
     if(number<0) number*=-1;
-    if(number!=0) {
-        int lastDigit = number%10;
-        int digitCount = (digit==lastDigit) ? 1 : 0;
-        return digitCount + occurenceCounter(number/10, digit);
-    } else {
-        return 0;
-    }
+    if(number==0) return 0;
+    int lastDigit = number%10;
+    int digitCount = (digit==lastDigit) ? 1 : 0;
+    return digitCount + occurenceCounter(number/10, digit);
 }
 
 
