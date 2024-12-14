@@ -1,0 +1,242 @@
+p {
+    margin-top: 1px;
+    margin-bottom: 0;
+}
+body {
+    background-color: #082032;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-block: 150px;
+    padding-inline: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #082032;
+    height: 100px;
+    padding-inline: 150px;
+    /* border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px; */
+}
+
+.left-corner {
+    color: white;
+}
+#header-lastname,
+#header-firstname {
+    display: inline;
+    color: #F1F6F9;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 25px;
+    font-style: normal;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #FF4C29;
+}
+
+.right-corner {
+    width: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-corner a {
+    color: #F1F6F9;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.main-home {
+    background-color: #334756;
+    border-radius: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 90px;
+    width: 900px;
+    height: 600px;
+
+}
+
+.information-container {
+    padding-block: 100px;
+    padding-left: 100px;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.item-container {
+    display: grid;
+    align-items: center;
+    background-color: #334756;
+    width: 300px;
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block: 15px;
+    box-shadow: 10px 10px #988b89;
+}
+
+.item-container p {
+    margin: 0;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+}
+
+.project-thumbnail {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px black;
+    margin-left: 15px;
+}
+
+.item-title {
+    color: #edf0f1;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 29px;
+    font-style: normal;
+}
+
+.item-info {
+    color: #eec9c9;
+    margin-top: 9px;
+    margin-left: 15px;
+}
+
+.about-header p {
+    color: #FF4C29;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 90px;
+    font-style: normal;
+}
+
+.about-information {
+    color: #F1F6F9;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.contact-container {
+    display: grid;
+    row-gap: 20px;
+    width: 1300px;
+}
+.contact-header p {
+    color: #FF4C29;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 90px;
+    font-style: normal;
+}
+
+.contact-information {
+    display: grid;
+    width: 500px;
+    grid-template-columns: 60px 1fr;
+    row-gap: 15px;
+    column-gap: 10px;
+    /* background-color: green; */
+    color: #F1F6F9;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.facebook-icon,
+.email-icon {
+    width: 50px;
+}
+
+.skill-header p {
+    color: #FF4C29;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+}
+
+.skill-information {
+    color: #F1F6F9;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+#intro {
+    color: #FF4C29;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;       
+}
+
+#name {
+    color: #F1F6F9;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: normal;
+
+    line-height: 1;
+}
+
+#statement {
+    color: #FF4C29;
+    font-family: "Oswald", serif;
+    margin-top: 15px;
+}
+
+#profile {
+    border: solid;
+    border-color: #082032;
+    border-radius: 124px;
+    height: 250px;
+    width: 250px;
+    margin-left: 50px;
+}
