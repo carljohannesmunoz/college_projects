@@ -156,8 +156,8 @@ int main() {
     if (row == col) {
         int n = sumOfDiagonal(A, row, sum);
         printf("Sum of the Main Diagonal: %d\n", n);
-        printf("Sum of the Upper Triangular Matrix: %d\n", upperTriangular(A, row, sum));
-        printf("Sum of the Lower Triangular Matrix: %d\n\n", lowerTriangular(A, row, sum));
+        printf("Sum of the Upper Triangular Matrix: %d\n", upperTriangular(A, row, sum) + n);
+        printf("Sum of the Lower Triangular Matrix: %d\n\n", lowerTriangular(A, row, sum) + n);
     }
 
     printf("*********************************************************************\n");
@@ -202,8 +202,8 @@ int main() {
     if (row == col) {
         int n = sumOfDiagonal(A, row, sum);
         printf("Sum of the Main Diagonal: %d\n", n);
-        printf("Sum of the Upper Triangular Matrix: %d\n", upperTriangular(A, row, sum));
-        printf("Sum of the Lower Triangular Matrix: %d\n\n", lowerTriangular(A, row, sum));
+        printf("Sum of the Upper Triangular Matrix: %d\n", upperTriangular(A, row, sum) + n);
+        printf("Sum of the Lower Triangular Matrix: %d\n\n", lowerTriangular(A, row, sum) + n);
     }
 
     fclose(in);
